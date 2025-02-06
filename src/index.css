@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* FONT SETUP */
+  --font-primary: "Nunito", "serif";
+  --font-secondary: "Lora", "serif";
+
+  /* COLOR SETUP */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #faca10;
+  --color-secondary: #1e1e1e;
+  --accent-1: #f2f2f2;
+
+  /* BREAKPOINTS */
+  --breakpoint-2xl: initial;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
