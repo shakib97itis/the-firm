@@ -1,46 +1,16 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import HeadingSecondary from "./utils/HeadingSecondary";
+import PartnersSlider from "./PartnersSlider";
 
 function OurPartners() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <div>
-      <div className="container">
-        <HeadingSecondary className1="" className2="">
+      <div className="container mb-[100px]">
+        <HeadingSecondary className1="mb-[80px]" className2="">
           Our Partner
         </HeadingSecondary>
-
-        {/* slider */}
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+        <PartnersSlider />
       </div>
     </div>
   );

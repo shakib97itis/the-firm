@@ -13,7 +13,8 @@
   --color-black: #000000;
   --color-primary: #faca10;
   --color-secondary: #1e1e1e;
-  --accent-1: #f2f2f2;
+  --color-accent-1: #f2f2f2;
+  --color-accent-2: #f6f6f6;
 
   /* BREAKPOINTS */
   --breakpoint-2xl: initial;
@@ -21,4 +22,32 @@
 
 .container {
   @apply mx-auto px-4;
+}
+
+/* slick-arrow slick-next */
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.custom-prev {
+  left: -96px;
+}
+
+.custom-next {
+  right: -96px;
+}
+
+.custom-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
